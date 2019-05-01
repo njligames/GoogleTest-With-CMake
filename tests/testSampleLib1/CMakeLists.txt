@@ -5,8 +5,8 @@ ADD_EXECUTABLE(testSampleLib1 ${SRCS})
 TARGET_LINK_LIBRARIES(
     testSampleLib1
     SAMPLE_LIB_1
-    libgtest
-    libgmock
+    ${GTEST_LIBRARY}
+    ${GMOCK_LIBRARY}
 )
 
 add_test(NAME testSampleLib1
